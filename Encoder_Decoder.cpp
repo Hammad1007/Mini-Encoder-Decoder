@@ -11,10 +11,11 @@
 
 // *************************************************************************************************************
 
-#include <iostream>
-#include <stdlib.h>
+#include <iostream>	// for cin and cout words
+#include <stdlib.h>	
 #include <conio.h>
-#include <string>
+#include <string>	// fo string handling
+#include <fstream>	// for file handling
 #include <string.h>
 using namespace std;
 
@@ -41,8 +42,7 @@ public:
 
 	// Default Constructor
 	Decoder() {
-		cout << "Decoder() called." << endl;
-		coutt << endl;
+		cout << "Decoder() called.\n";
 		message = '\0';
 	}
 
@@ -160,7 +160,7 @@ public:
 
 	// Destructor
 	~Decoder() {
-		cout << "~Decoder() called." << endl << endl;
+		cout << "~Decoder() called.\n";
 	}
 
 };  // end of class
@@ -172,15 +172,15 @@ public:
 
 	// Default Constructor
 	SuperDecoder() {
-		cout << "SuperDecoder() called." << endl << endl;
+		cout << "SuperDecoder() called.\n";
 	}
 
 	// Function counts vowels, consonants and special characters such as comma, space, fullstop
 	void No_of_Vowels() {
-		int special_count = 0;     // number of special characters n the string e.g spaces, commas etc
-		int vowel_count = 0;       // number of vowels in the string
-		int consonant_count = 0;   // number of consonants in the string
-		int size = this->message.length();
+		int special_count = 0;     	// number of special characters n the string e.g spaces, commas etc
+		int vowel_count = 0;       	// number of vowels in the string
+		int consonant_count = 0;   	// number of consonants in the string
+		int size = this->message.length();	// calculate the size of the string
 		for (int i = 0; i < size; i++) {
 			if (message[i] == 'A' || message[i] == 'a' || message[i] == 'E' || message[i] == 'e' || message[i] == 'I' || message[i] == 'i' || message[i] == 'O' || message[i] == 'o' || message[i] == 'U' || message[i] == 'u') {
 				vowel_count++;
@@ -217,7 +217,7 @@ public:
 
 	// Destructor
 	~SuperDecoder() {
-		cout << "~SuperDecoder() called." << endl << endl;
+		cout << "~SuperDecoder() called.\n";
 	}
 
 };  // end of class
@@ -229,7 +229,7 @@ public:
 
 	// Default Constructor
 	PremiumDecoder() {
-		cout << "PremiumDecoder() called." << endl << endl;
+		cout << "PremiumDecoder() called.\n";
 	}
 
 	// Function counts vowels, consonants and special characters such as comma, space, fullstop
@@ -287,7 +287,7 @@ public:
 
 	// Additional function to Count the number of letters in the string
 	int No_of_Letters() {
-		int letter_count = 0;   // variable to count letters, initialized to 0
+		int letter_count = 0;   	// variable to count letters, initialized to 0
 		for (int i = 0; message[i] != '\0'; i++) {
 			if (message[i] >= 65 || message[i] <= 90 && message[i] >= 97 || message[i] <= 122 && message[i] != ' ' || message[i] != ',' || message[i] != '.' || message[i] != '-' || message[i] != '!') {
 				letter_count++;
@@ -299,7 +299,7 @@ public:
 
 	// Destructor
 	~PremiumDecoder() {
-		cout << "~PremiumDecoder() called." << endl << endl;
+		cout << "~PremiumDecoder() called.\n";
 	}
 
 };  // end of class
@@ -336,12 +336,12 @@ void OperateDecoder(PremiumDecoder& Instance) {
 int main() {
 	system("Color B0");
 
-    // Menu function sets the interface
+   	// Menu function sets the interface
 	Menu();
 
 	cout << endl;
 
-	Decoder d1;
+	Decoder d1;	// decoder class object
 	d1.setmessage("Hammad Rashid");
 
 	cout << "The set string is: " << d1.getmessage() << endl;
@@ -356,7 +356,7 @@ int main() {
 
 	cout << endl;
 
-	SuperDecoder sd1;
+	SuperDecoder sd1;	// super decoder class object
 	sd1.Input();
 
 	cout << endl;
@@ -373,7 +373,7 @@ int main() {
 
 	cout << endl;
 
-	PremiumDecoder pd1;
+	PremiumDecoder pd1;	// premium decoder class object
 	pd1.Input();
 
 	cout << endl;
