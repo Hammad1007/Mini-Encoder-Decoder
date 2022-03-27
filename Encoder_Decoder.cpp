@@ -14,7 +14,7 @@
 #include <iostream>	// for cin and cout words
 #include <stdlib.h>	
 #include <conio.h>
-#include <string>	// fo string handling
+#include <string>	// for string handling
 #include <fstream>	// for file handling
 #include <string.h>
 using namespace std;
@@ -39,7 +39,6 @@ class Decoder {
 protected:
 	string message;
 public:
-
 	// Default Constructor
 	Decoder() {
 		cout << "Decoder() called.\n";
