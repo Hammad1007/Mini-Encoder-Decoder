@@ -12,7 +12,7 @@
 // *************************************************************************************************************
 
 #include <iostream>	// for cin and cout words
-#include <stdlib.h>	
+#include <stdlib.h>	// for colored console
 #include <conio.h>
 #include <string>	// for string handling
 #include <fstream>	// for file handling
