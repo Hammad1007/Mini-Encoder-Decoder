@@ -16,7 +16,7 @@
 #include <conio.h>
 #include <string>	// for string handling
 #include <fstream>	// for file handling
-#include <string.h>
+#include <string.h>	// for strings
 using namespace std;
 
 // Function to show the interface of the console window
