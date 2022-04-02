@@ -1,4 +1,4 @@
-//Assumptions assumed:
+// Assumptions assumed:
 //* Data members have been set as protected
 //* In function vowel count, it displays the vowels, consonants, special characters
 //* An extra function is of letter counting, added in the premium decoder class to count letters in premium decoder class
@@ -6,8 +6,6 @@
 //* Decode function is not written in every calss as it is carrying out the same work in all the three classes
 //* The programme shows multiple inheritance
 //*                           PremiumDecoder <----- Decoder -----> SuperDecoder
-
-
 
 // *************************************************************************************************************
 
