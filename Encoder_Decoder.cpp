@@ -11,7 +11,7 @@
 
 #include <iostream>	// for cin and cout words
 #include <stdlib.h>	// for colored console
-#include <conio.h>
+#include <conio.h>	// for console input and output
 #include <string>	// for string handling
 #include <fstream>	// for file handling
 #include <string.h>	// for strings
