@@ -166,7 +166,6 @@ public:
 // Child class of Decoder class
 class SuperDecoder : public Decoder {
 public:
-
 	// Default Constructor
 	SuperDecoder() {
 		cout << "SuperDecoder() called.\n";
@@ -223,7 +222,6 @@ public:
 // Child class of Decoder class
 class PremiumDecoder : public Decoder {
 public:
-
 	// Default Constructor
 	PremiumDecoder() {
 		cout << "PremiumDecoder() called.\n";
