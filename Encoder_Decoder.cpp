@@ -32,7 +32,7 @@ void LineFun() {
 	cout << "\t\t<----------------------------------------------------------------------------->" << endl;
 }
 
-// Parent class
+// Parent Class
 class Decoder {
 protected:
 	string message;
