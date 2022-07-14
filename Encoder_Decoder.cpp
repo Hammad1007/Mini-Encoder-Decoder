@@ -163,7 +163,7 @@ public:
 };  // end of class
 
 
-// Child class of Decoder class
+// Child class of Decoder Class
 class SuperDecoder : public Decoder {
 public:
 	// Default Constructor
